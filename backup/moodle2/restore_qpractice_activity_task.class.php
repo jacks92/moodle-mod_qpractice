@@ -72,11 +72,11 @@ class restore_qpractice_activity_task extends restore_activity_task {
     public static function define_decode_rules() {
         $rules = array();
 
-        $rules[] = new restore_decode_rule('qpracticeVIEWBYID',
+        $rules[] = new restore_decode_rule('QPRACTICEVIEWBYID',
                 '/mod/qpractice/view.php?id=$1', 'course_module');
-        $rules[] = new restore_decode_rule('qpracticeVIEWBYQ',
+        $rules[] = new restore_decode_rule('QPRACTICEVIEWBYQ',
                 '/mod/qpractice/view.php?q=$1', 'qpractice');
-        $rules[] = new restore_decode_rule('qpracticeINDEX',
+        $rules[] = new restore_decode_rule('QPRACTICEINDEX',
                 '/mod/qpractice/index.php?id=$1', 'course');
 
         return $rules;
